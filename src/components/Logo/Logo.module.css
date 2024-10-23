@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .Logo {
   background-color: white;
   height: 100%;
@@ -8,3 +9,16 @@
 .Logo img {
   height: 100%;
 }
+=======
+.Logo{
+    background-color: white;
+    height: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+}
+.Logo img{
+    height: 100%;
+}
+>>>>>>> c8515375063b10dd1fae9dcc2c9e7a3c5ceaa295

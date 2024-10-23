@@ -1,5 +1,19 @@
+<<<<<<< HEAD
 .CheckoutSummary {
   text-align: center;
   width: 80%;
   margin: auto;
 }
+=======
+.CheckoutSummary{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+@media (min-width: 600px){
+    .CheckoutSummary{
+        width: 500px;
+    }
+}
+>>>>>>> c8515375063b10dd1fae9dcc2c9e7a3c5ceaa295

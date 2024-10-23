@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Layout from './hoc/Layout/Layout';
 import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
+<<<<<<< HEAD
 import {Route,Switch, withRouter,Redirect} from 'react-router-dom';
 import Logout from './containers/Auth/Logout/Logout';
 import { connect } from 'react-redux';
@@ -53,11 +54,29 @@ class App extends Component{
     <div>
       <Layout>
         {Routes}
+=======
+import Checkout from './containers/Checkout/Checkout';
+import {Route,Switch} from 'react-router-dom';
+import Orders from './containers/Orders/Orders';
+
+class App extends Component{
+  render(){
+  return (
+    <div>
+      <Layout>
+        <Switch>
+          <Route path='/checkout' component={Checkout} />
+          <Route path='/orders' component={Orders} />
+          <Route path='/' exact component={BurgerBuilder} />
+          {/* exact avoid us from the prefix of the path */}
+        </Switch>
+>>>>>>> c8515375063b10dd1fae9dcc2c9e7a3c5ceaa295
       </Layout>
     </div>
   );
   }
 }
+<<<<<<< HEAD
 
 const mapStateToProps = (state) =>{
   return {
@@ -74,3 +93,6 @@ export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
 
 
     // react-test-renderer and enzyme-adapter-react-16 are two additional packages  used with eznyme library/package to work correctly with jest and react. 
+=======
+export default App;
+>>>>>>> c8515375063b10dd1fae9dcc2c9e7a3c5ceaa295

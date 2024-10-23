@@ -21,7 +21,11 @@ const buildControls=(props)=>(
             disabled={props.disabled[cntrl.type]}
             />
         ))}
+<<<<<<< HEAD
         <button disabled={!props.purchasable}  className={classes.OrderButton} onClick={props.ordered}>{props.isAuth ? "ORDER NOW" : "SINGUP TO ORDER"}</button>
+=======
+        <button disabled={!props.purchasable}  className={classes.OrderButton} onClick={props.ordered}>Order Now</button>
+>>>>>>> c8515375063b10dd1fae9dcc2c9e7a3c5ceaa295
     </div>
 )
 export default buildControls;

@@ -3,6 +3,10 @@ import classes from './Burger.module.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
 const burger=(props)=>{
+<<<<<<< HEAD
+=======
+    console.log(props);
+>>>>>>> c8515375063b10dd1fae9dcc2c9e7a3c5ceaa295
     let transformedIngredients=Object.keys(props.ingredients)
     .map(igkey=>{ //this map function will return an array of undefined values having length of props.ingredients[igkey].
         return [...Array(props.ingredients[igkey])]
